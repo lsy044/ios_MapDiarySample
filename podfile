@@ -1,12 +1,12 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'NMapTest' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-    pod 'Alamofire', '4.7.3'
-
+  
   # Pods for NMapTest
+  pod 'Alamofire', '~> 5.0.0-beta.5'
 
   target 'NMapTestTests' do
     inherit! :search_paths

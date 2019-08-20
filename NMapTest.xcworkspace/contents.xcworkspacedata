@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Secrets.swift">
+   </FileRef>
+   <FileRef
       location = "group:NMapTest.xcodeproj">
    </FileRef>
    <FileRef
