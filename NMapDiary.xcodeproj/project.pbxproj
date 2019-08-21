@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		261126A4B43A3ABC18BB7334 /* Pods_NMapDiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7DB1C5E6B7034ADC46C52 /* Pods_NMapDiaryTests.framework */; };
+		3C30C586230DD1D000C1D487 /* SearchPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C585230DD1D000C1D487 /* SearchPlaceViewController.swift */; };
+		3C30C588230DD20000C1D487 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C587230DD20000C1D487 /* Place.swift */; };
+		3C30C58A230DD22D00C1D487 /* NMapViewResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C589230DD22D00C1D487 /* NMapViewResources.swift */; };
+		3C30C58F230DD2BC00C1D487 /* NMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C58E230DD2BC00C1D487 /* NMapViewController.swift */; };
+		3C30C591230DD32A00C1D487 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C590230DD32A00C1D487 /* PlaceTableViewCell.swift */; };
+		3CD6B788230DCBE0000D13F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6B787230DCBE0000D13F0 /* AppDelegate.swift */; };
+		3CD6B78A230DCBE0000D13F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6B789230DCBE0000D13F0 /* ViewController.swift */; };
+		3CD6B78D230DCBE0000D13F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD6B78B230DCBE0000D13F0 /* Main.storyboard */; };
+		3CD6B78F230DCBE3000D13F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD6B78E230DCBE3000D13F0 /* Assets.xcassets */; };
+		3CD6B792230DCBE3000D13F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD6B790230DCBE3000D13F0 /* LaunchScreen.storyboard */; };
+		3CD6B79D230DCBE3000D13F0 /* NMapDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6B79C230DCBE3000D13F0 /* NMapDiaryTests.swift */; };
+		3CD6B7A8230DCBE3000D13F0 /* NMapDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6B7A7230DCBE3000D13F0 /* NMapDiaryUITests.swift */; };
+		3CD6B7B6230DCD27000D13F0 /* ApiGatewayMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD6B7B5230DCD27000D13F0 /* ApiGatewayMac.framework */; };
+		3CD6B7B7230DCD27000D13F0 /* ApiGatewayMac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD6B7B5230DCD27000D13F0 /* ApiGatewayMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CD6B7BB230DCD33000D13F0 /* NMapViewerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD6B7BA230DCD33000D13F0 /* NMapViewerSDK.framework */; };
+		5ADEF0DEA6BBEB5E08AD7BA8 /* Pods_NMapDiaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3741B583732D5FB2F40E291 /* Pods_NMapDiaryUITests.framework */; };
+		C769EAF56FB29AE5DD3362F1 /* Pods_NMapDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D000B959A6B6B791E9156B4 /* Pods_NMapDiary.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CD6B799230DCBE3000D13F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CD6B77C230DCBE0000D13F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CD6B783230DCBE0000D13F0;
+			remoteInfo = NMapDiary;
+		};
+		3CD6B7A4230DCBE3000D13F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CD6B77C230DCBE0000D13F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CD6B783230DCBE0000D13F0;
+			remoteInfo = NMapDiary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3CD6B7B8230DCD27000D13F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3CD6B7B7230DCD27000D13F0 /* ApiGatewayMac.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B4DE6A7A55C0572880035FB /* Pods-NMapDiaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapDiaryUITests.release.xcconfig"; path = "Target Support Files/Pods-NMapDiaryUITests/Pods-NMapDiaryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2D9C41AC5AB7B7C4EBE2DB08 /* Pods-NMapDiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapDiaryTests.release.xcconfig"; path = "Target Support Files/Pods-NMapDiaryTests/Pods-NMapDiaryTests.release.xcconfig"; sourceTree = "<group>"; };
+		3C30C584230DCF7B00C1D487 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		3C30C585230DD1D000C1D487 /* SearchPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewController.swift; sourceTree = "<group>"; };
+		3C30C587230DD20000C1D487 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		3C30C589230DD22D00C1D487 /* NMapViewResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapViewResources.swift; sourceTree = "<group>"; };
+		3C30C58D230DD29000C1D487 /* Anam.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Anam.gpx; sourceTree = "<group>"; };
+		3C30C58E230DD2BC00C1D487 /* NMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapViewController.swift; sourceTree = "<group>"; };
+		3C30C590230DD32A00C1D487 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		3CD6B784230DCBE0000D13F0 /* NMapDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMapDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD6B787230DCBE0000D13F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CD6B789230DCBE0000D13F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CD6B78C230DCBE0000D13F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CD6B78E230DCBE3000D13F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CD6B791230DCBE3000D13F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CD6B793230DCBE3000D13F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CD6B798230DCBE3000D13F0 /* NMapDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NMapDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD6B79C230DCBE3000D13F0 /* NMapDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapDiaryTests.swift; sourceTree = "<group>"; };
+		3CD6B79E230DCBE3000D13F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CD6B7A3230DCBE3000D13F0 /* NMapDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NMapDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD6B7A7230DCBE3000D13F0 /* NMapDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapDiaryUITests.swift; sourceTree = "<group>"; };
+		3CD6B7A9230DCBE3000D13F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CD6B7B5230DCD27000D13F0 /* ApiGatewayMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApiGatewayMac.framework; path = "../maps-2.ios-ncp/Frameworks/ApiGatewayMac.framework"; sourceTree = "<group>"; };
+		3CD6B7BA230DCD33000D13F0 /* NMapViewerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMapViewerSDK.framework; path = "../maps-2.ios-ncp/Frameworks/NMapViewerSDK.framework"; sourceTree = "<group>"; };
+		4D000B959A6B6B791E9156B4 /* Pods_NMapDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMapDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59A680DE9C9D4B2767BAC5D3 /* Pods-NMapDiaryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapDiaryUITests.debug.xcconfig"; path = "Target Support Files/Pods-NMapDiaryUITests/Pods-NMapDiaryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		90C7DB1C5E6B7034ADC46C52 /* Pods_NMapDiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMapDiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C00C62C9281BCCE3CE6F42 /* Pods-NMapDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapDiary.debug.xcconfig"; path = "Target Support Files/Pods-NMapDiary/Pods-NMapDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		B8FB0AB6ADEBB64ACFFE6A77 /* Pods-NMapDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapDiary.release.xcconfig"; path = "Target Support Files/Pods-NMapDiary/Pods-NMapDiary.release.xcconfig"; sourceTree = "<group>"; };
+		BA2913F6EAD1700FC9FB3C18 /* Pods-NMapDiaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapDiaryTests.debug.xcconfig"; path = "Target Support Files/Pods-NMapDiaryTests/Pods-NMapDiaryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3741B583732D5FB2F40E291 /* Pods_NMapDiaryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMapDiaryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CD6B781230DCBE0000D13F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD6B7BB230DCD33000D13F0 /* NMapViewerSDK.framework in Frameworks */,
+				3CD6B7B6230DCD27000D13F0 /* ApiGatewayMac.framework in Frameworks */,
+				C769EAF56FB29AE5DD3362F1 /* Pods_NMapDiary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD6B795230DCBE3000D13F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261126A4B43A3ABC18BB7334 /* Pods_NMapDiaryTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD6B7A0230DCBE3000D13F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADEF0DEA6BBEB5E08AD7BA8 /* Pods_NMapDiaryUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CD6B77B230DCBE0000D13F0 = {
+			isa = PBXGroup;
+			children = (
+				3CD6B7B5230DCD27000D13F0 /* ApiGatewayMac.framework */,
+				3CD6B786230DCBE0000D13F0 /* NMapDiary */,
+				3CD6B79B230DCBE3000D13F0 /* NMapDiaryTests */,
+				3CD6B7A6230DCBE3000D13F0 /* NMapDiaryUITests */,
+				3CD6B785230DCBE0000D13F0 /* Products */,
+				3CD6B7B9230DCD32000D13F0 /* Frameworks */,
+				A8EC78A3EFE2AA5FAC7EAB17 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		3CD6B785230DCBE0000D13F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CD6B784230DCBE0000D13F0 /* NMapDiary.app */,
+				3CD6B798230DCBE3000D13F0 /* NMapDiaryTests.xctest */,
+				3CD6B7A3230DCBE3000D13F0 /* NMapDiaryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CD6B786230DCBE0000D13F0 /* NMapDiary */ = {
+			isa = PBXGroup;
+			children = (
+				3CD6B787230DCBE0000D13F0 /* AppDelegate.swift */,
+				3CD6B789230DCBE0000D13F0 /* ViewController.swift */,
+				3C30C585230DD1D000C1D487 /* SearchPlaceViewController.swift */,
+				3C30C590230DD32A00C1D487 /* PlaceTableViewCell.swift */,
+				3C30C58D230DD29000C1D487 /* Anam.gpx */,
+				3C30C58E230DD2BC00C1D487 /* NMapViewController.swift */,
+				3C30C587230DD20000C1D487 /* Place.swift */,
+				3C30C589230DD22D00C1D487 /* NMapViewResources.swift */,
+				3CD6B78B230DCBE0000D13F0 /* Main.storyboard */,
+				3CD6B78E230DCBE3000D13F0 /* Assets.xcassets */,
+				3CD6B790230DCBE3000D13F0 /* LaunchScreen.storyboard */,
+				3CD6B793230DCBE3000D13F0 /* Info.plist */,
+				3C30C584230DCF7B00C1D487 /* Header.h */,
+			);
+			path = NMapDiary;
+			sourceTree = "<group>";
+		};
+		3CD6B79B230DCBE3000D13F0 /* NMapDiaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CD6B79C230DCBE3000D13F0 /* NMapDiaryTests.swift */,
+				3CD6B79E230DCBE3000D13F0 /* Info.plist */,
+			);
+			path = NMapDiaryTests;
+			sourceTree = "<group>";
+		};
+		3CD6B7A6230DCBE3000D13F0 /* NMapDiaryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CD6B7A7230DCBE3000D13F0 /* NMapDiaryUITests.swift */,
+				3CD6B7A9230DCBE3000D13F0 /* Info.plist */,
+			);
+			path = NMapDiaryUITests;
+			sourceTree = "<group>";
+		};
+		3CD6B7B9230DCD32000D13F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CD6B7BA230DCD33000D13F0 /* NMapViewerSDK.framework */,
+				4D000B959A6B6B791E9156B4 /* Pods_NMapDiary.framework */,
+				90C7DB1C5E6B7034ADC46C52 /* Pods_NMapDiaryTests.framework */,
+				D3741B583732D5FB2F40E291 /* Pods_NMapDiaryUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8EC78A3EFE2AA5FAC7EAB17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0C00C62C9281BCCE3CE6F42 /* Pods-NMapDiary.debug.xcconfig */,
+				B8FB0AB6ADEBB64ACFFE6A77 /* Pods-NMapDiary.release.xcconfig */,
+				BA2913F6EAD1700FC9FB3C18 /* Pods-NMapDiaryTests.debug.xcconfig */,
+				2D9C41AC5AB7B7C4EBE2DB08 /* Pods-NMapDiaryTests.release.xcconfig */,
+				59A680DE9C9D4B2767BAC5D3 /* Pods-NMapDiaryUITests.debug.xcconfig */,
+				0B4DE6A7A55C0572880035FB /* Pods-NMapDiaryUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CD6B783230DCBE0000D13F0 /* NMapDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD6B7AC230DCBE3000D13F0 /* Build configuration list for PBXNativeTarget "NMapDiary" */;
+			buildPhases = (
+				6A479E9C38B11222484FC06E /* [CP] Check Pods Manifest.lock */,
+				3CD6B780230DCBE0000D13F0 /* Sources */,
+				3CD6B781230DCBE0000D13F0 /* Frameworks */,
+				3CD6B782230DCBE0000D13F0 /* Resources */,
+				3CD6B7B8230DCD27000D13F0 /* Embed Frameworks */,
+				3CD6B7BC230DCDA5000D13F0 /* ShellScript */,
+				91167AE2FDDCA898C4BE794F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NMapDiary;
+			productName = NMapDiary;
+			productReference = 3CD6B784230DCBE0000D13F0 /* NMapDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CD6B797230DCBE3000D13F0 /* NMapDiaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD6B7AF230DCBE3000D13F0 /* Build configuration list for PBXNativeTarget "NMapDiaryTests" */;
+			buildPhases = (
+				B0B3AE6917DA5CB24A5223BB /* [CP] Check Pods Manifest.lock */,
+				3CD6B794230DCBE3000D13F0 /* Sources */,
+				3CD6B795230DCBE3000D13F0 /* Frameworks */,
+				3CD6B796230DCBE3000D13F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CD6B79A230DCBE3000D13F0 /* PBXTargetDependency */,
+			);
+			name = NMapDiaryTests;
+			productName = NMapDiaryTests;
+			productReference = 3CD6B798230DCBE3000D13F0 /* NMapDiaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CD6B7A2230DCBE3000D13F0 /* NMapDiaryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD6B7B2230DCBE3000D13F0 /* Build configuration list for PBXNativeTarget "NMapDiaryUITests" */;
+			buildPhases = (
+				D26AB0C1AB72A997B93C57B0 /* [CP] Check Pods Manifest.lock */,
+				3CD6B79F230DCBE3000D13F0 /* Sources */,
+				3CD6B7A0230DCBE3000D13F0 /* Frameworks */,
+				3CD6B7A1230DCBE3000D13F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CD6B7A5230DCBE3000D13F0 /* PBXTargetDependency */,
+			);
+			name = NMapDiaryUITests;
+			productName = NMapDiaryUITests;
+			productReference = 3CD6B7A3230DCBE3000D13F0 /* NMapDiaryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CD6B77C230DCBE0000D13F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = sy;
+				TargetAttributes = {
+					3CD6B783230DCBE0000D13F0 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					3CD6B797230DCBE3000D13F0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 3CD6B783230DCBE0000D13F0;
+					};
+					3CD6B7A2230DCBE3000D13F0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 3CD6B783230DCBE0000D13F0;
+					};
+				};
+			};
+			buildConfigurationList = 3CD6B77F230DCBE0000D13F0 /* Build configuration list for PBXProject "NMapDiary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CD6B77B230DCBE0000D13F0;
+			productRefGroup = 3CD6B785230DCBE0000D13F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CD6B783230DCBE0000D13F0 /* NMapDiary */,
+				3CD6B797230DCBE3000D13F0 /* NMapDiaryTests */,
+				3CD6B7A2230DCBE3000D13F0 /* NMapDiaryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CD6B782230DCBE0000D13F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD6B792230DCBE3000D13F0 /* LaunchScreen.storyboard in Resources */,
+				3CD6B78F230DCBE3000D13F0 /* Assets.xcassets in Resources */,
+				3CD6B78D230DCBE0000D13F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD6B796230DCBE3000D13F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD6B7A1230DCBE3000D13F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CD6B7BC230DCDA5000D13F0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/Users/jin/Desktop/ios/maps-2.ios-ncp/Scripts/strip-frameworks.sh";
+		};
+		6A479E9C38B11222484FC06E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NMapDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91167AE2FDDCA898C4BE794F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NMapDiary/Pods-NMapDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0B3AE6917DA5CB24A5223BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NMapDiaryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D26AB0C1AB72A997B93C57B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NMapDiaryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CD6B780230DCBE0000D13F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD6B78A230DCBE0000D13F0 /* ViewController.swift in Sources */,
+				3CD6B788230DCBE0000D13F0 /* AppDelegate.swift in Sources */,
+				3C30C586230DD1D000C1D487 /* SearchPlaceViewController.swift in Sources */,
+				3C30C591230DD32A00C1D487 /* PlaceTableViewCell.swift in Sources */,
+				3C30C588230DD20000C1D487 /* Place.swift in Sources */,
+				3C30C58A230DD22D00C1D487 /* NMapViewResources.swift in Sources */,
+				3C30C58F230DD2BC00C1D487 /* NMapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD6B794230DCBE3000D13F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD6B79D230DCBE3000D13F0 /* NMapDiaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD6B79F230DCBE3000D13F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD6B7A8230DCBE3000D13F0 /* NMapDiaryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CD6B79A230DCBE3000D13F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CD6B783230DCBE0000D13F0 /* NMapDiary */;
+			targetProxy = 3CD6B799230DCBE3000D13F0 /* PBXContainerItemProxy */;
+		};
+		3CD6B7A5230DCBE3000D13F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CD6B783230DCBE0000D13F0 /* NMapDiary */;
+			targetProxy = 3CD6B7A4230DCBE3000D13F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CD6B78B230DCBE0000D13F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CD6B78C230DCBE0000D13F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CD6B790230DCBE3000D13F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CD6B791230DCBE3000D13F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CD6B7AA230DCBE3000D13F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CD6B7AB230DCBE3000D13F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CD6B7AD230DCBE3000D13F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C00C62C9281BCCE3CE6F42 /* Pods-NMapDiary.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7ZR296ZWX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../maps-2.ios-ncp/Frameworks\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NMapDiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sy.NMapTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/jin/Desktop/ios/NMapDiary/NMapDiary/Header.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CD6B7AE230DCBE3000D13F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8FB0AB6ADEBB64ACFFE6A77 /* Pods-NMapDiary.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7ZR296ZWX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../maps-2.ios-ncp/Frameworks\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NMapDiary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sy.NMapTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/jin/Desktop/ios/NMapDiary/NMapDiary/Header.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CD6B7B0230DCBE3000D13F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA2913F6EAD1700FC9FB3C18 /* Pods-NMapDiaryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7ZR296ZWX;
+				INFOPLIST_FILE = NMapDiaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sy.NMapDiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NMapDiary.app/NMapDiary";
+			};
+			name = Debug;
+		};
+		3CD6B7B1230DCBE3000D13F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D9C41AC5AB7B7C4EBE2DB08 /* Pods-NMapDiaryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7ZR296ZWX;
+				INFOPLIST_FILE = NMapDiaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sy.NMapDiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NMapDiary.app/NMapDiary";
+			};
+			name = Release;
+		};
+		3CD6B7B3230DCBE3000D13F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59A680DE9C9D4B2767BAC5D3 /* Pods-NMapDiaryUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7ZR296ZWX;
+				INFOPLIST_FILE = NMapDiaryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sy.NMapDiaryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NMapDiary;
+			};
+			name = Debug;
+		};
+		3CD6B7B4230DCBE3000D13F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B4DE6A7A55C0572880035FB /* Pods-NMapDiaryUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z7ZR296ZWX;
+				INFOPLIST_FILE = NMapDiaryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sy.NMapDiaryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NMapDiary;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CD6B77F230DCBE0000D13F0 /* Build configuration list for PBXProject "NMapDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD6B7AA230DCBE3000D13F0 /* Debug */,
+				3CD6B7AB230DCBE3000D13F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CD6B7AC230DCBE3000D13F0 /* Build configuration list for PBXNativeTarget "NMapDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD6B7AD230DCBE3000D13F0 /* Debug */,
+				3CD6B7AE230DCBE3000D13F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CD6B7AF230DCBE3000D13F0 /* Build configuration list for PBXNativeTarget "NMapDiaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD6B7B0230DCBE3000D13F0 /* Debug */,
+				3CD6B7B1230DCBE3000D13F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CD6B7B2230DCBE3000D13F0 /* Build configuration list for PBXNativeTarget "NMapDiaryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD6B7B3230DCBE3000D13F0 /* Debug */,
+				3CD6B7B4230DCBE3000D13F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CD6B77C230DCBE0000D13F0 /* Project object */;
+}

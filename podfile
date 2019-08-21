@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'NMapDiary' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for NMapDiary
+  pod 'Alamofire', '~>4.6'
+  
+  target 'NMapDiaryTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'NMapDiaryUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
