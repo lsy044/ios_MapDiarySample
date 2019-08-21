@@ -12,6 +12,7 @@ class PlaceTableViewCell: UITableViewCell {
 
     //response
     @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var addressLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

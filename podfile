@@ -6,7 +6,7 @@ target 'NMapTest' do
   use_frameworks!
   
   # Pods for NMapTest
-  pod 'Alamofire', '~> 5.0.0-beta.5'
+  pod 'Alamofire', '~>4.6'
 
   target 'NMapTestTests' do
     inherit! :search_paths

@@ -12,39 +12,24 @@ import Alamofire
 class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     //request
-    @IBOutlet var query: UITextField! //장소명칭
-    
-    @IBOutlet var place: UILabel!
+    @IBOutlet var queryField: UITextField! //장소명칭
     @IBOutlet weak var responseView: UITableView!
+    
     let cellIdentifier: String = "cell"
-    var places: [Place] = []
-
+    var placeArrays: [Place] = []
+    
     // TableViewDataSource - required
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = responseView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PlaceTableViewCell
+        let cell = responseView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PlaceTableViewCell
         
-        let place: Place = self.places[indexPath.row]
-        
-        cell.textLabel?.text = place.name
-        //        cell.nameLabel.text = place.name
-        
-        //        // 비동기 - 백그라운드포함 어디에서나 동작 (ex 이미지받아오기)
-        //        DispatchQueue.global().async {
-        //            // cell의 움직임에 대한 인덱스변화와 이미지 맞추기
-        //            if let index: IndexPath = self.responseView.indexPath(for: cell) {
-        //                if index.row == indexPath.row {
-        //
-        //                }
-        //            }
-        //            // 비동기 - 메인스레드에서 실행할 메소드 (ex 이미지셋팅)
-        //            DispatchQueue.main.async { }
-        //        }
-        //
+        let place: Place = placeArrays[indexPath.row]
+        cell.nameLabel.text = place.name
+        cell.addressLabel.text = place.jibunAddress
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return places.count
+        return placeArrays.count
     }
     
     override func viewDidLoad() {
@@ -55,27 +40,52 @@ class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITabl
     
     // Search Button
     @IBAction func callSearchPlace(_sender: UIButton) {
-        print("sy")
+        guard let query: String = queryField.text, query.isEmpty == false else{
+            print("검색어입력해주세요")
+            return
+        }
+        queryField.endEditing(true)
+        search(query)
+    }
+    
+    func search(_ query: String) {
         
+        print("\(query)를 검색합니다 ")
         let url = URL(string: "https://naveropenapi.apigw.ntruss.com/map-place/v1/search")
-        let param: Parameters = [ "query": query.text ?? "" , "coordinate": "127.029148,37.586568"]
+        let param: Parameters = [ "query": queryField.text ?? "" , "coordinate": "127.029148,37.586568"]
         
-        AF.request(
-            url!, method: .get, parameters: param, encoding: URLEncoding.default, headers: ["X-NCP-APIGW-API-KEY-ID":"","X-NCP-APIGW-API-KEY":""])
-            
-            .validate()
-            .responseJSON() { response in
-                print("성공여부 : \(response.result)")
-                switch response.result {
-                case .success(let value):
-                    if let json = value as? [String: Any],
-                        let info = json["places"] as? [[String: Any]] {
-                        print(info.first?["name"] as! String)
-                    }
-                case .failure(_): break
-                }
+        //get response
+        let request = Alamofire.request(url!, method: .get, parameters: param, encoding: URLEncoding.default, headers: ["X-NCP-APIGW-API-KEY-ID":"","X-NCP-APIGW-API-KEY":""])
+        request.response{(dataResponse) in
+            // get data - decode
+            guard let data: Data = dataResponse.data else {
+                print("no data")
+                return
             }
+            let decoder: JSONDecoder = JSONDecoder()
+            do {
+                let response: PlaceResponse
+                response = try decoder.decode(PlaceResponse.self, from: data)
+                // 결과의 places 정보를 배열에 담기
+                if let places: [Place] = response.places {
+                    self.placeArrays = places
+                    print("\(places.count)검색됨")
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+            self.responseView.reloadData()
+        }
+        //for test
+        request.responseJSON() {(response) in
+            print(response.result.value ?? "")
+        }
     }
     
     
 }
+
+/*
+ cell 누르면 지도에 표시... 찾던 곳이 맞으면 마커누르면 기록하는 창. 아니면 그냥 뒤로가기..
+ + 지도위에서 검색하면 좋을텐뎅(나중에)
+ */

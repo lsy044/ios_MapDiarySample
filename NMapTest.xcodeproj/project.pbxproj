@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C56009F230D7735004C5C07 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C56009E230D7735004C5C07 /* Place.swift */; };
 		3C9843C5230BEBB3003D0D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9843C4230BEBB3003D0D2F /* AppDelegate.swift */; };
 		3C9843C7230BEBB3003D0D2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9843C6230BEBB3003D0D2F /* ViewController.swift */; };
 		3C9843CA230BEBB3003D0D2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9843C8230BEBB3003D0D2F /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		0735B93A8C6A1571C2A7CF3E /* Pods-NMapTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapTest.release.xcconfig"; path = "Target Support Files/Pods-NMapTest/Pods-NMapTest.release.xcconfig"; sourceTree = "<group>"; };
 		0DB27D46EE15B9A52E88A025 /* Pods_NMapTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMapTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3555EB9022F529F4307BEE75 /* Pods-NMapTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-NMapTestUITests/Pods-NMapTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C56009E230D7735004C5C07 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		3C9843C1230BEBB3003D0D2F /* NMapTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMapTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9843C4230BEBB3003D0D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C9843C6230BEBB3003D0D2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				3C984400230BFB50003D0D2F /* SearchPlaceViewController.swift */,
 				3C984404230C0376003D0D2F /* PlaceTableViewCell.swift */,
 				3C984402230BFDA9003D0D2F /* Model.swift */,
+				3C56009E230D7735004C5C07 /* Place.swift */,
 				3CFD8EBB230C36F40012C96E /* Secrets.swift */,
 				3C9843FB230BF0D8003D0D2F /* NMapViewResources.swift */,
 				3C9843C8230BEBB3003D0D2F /* Main.storyboard */,
@@ -456,6 +459,7 @@
 				3C9843FE230BF190003D0D2F /* NMapViewController.swift in Sources */,
 				3C984405230C0376003D0D2F /* PlaceTableViewCell.swift in Sources */,
 				3C984403230BFDA9003D0D2F /* Model.swift in Sources */,
+				3C56009F230D7735004C5C07 /* Place.swift in Sources */,
 				3C9843C5230BEBB3003D0D2F /* AppDelegate.swift in Sources */,
 				3C984401230BFB50003D0D2F /* SearchPlaceViewController.swift in Sources */,
 			);
