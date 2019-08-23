@@ -1,6 +1,6 @@
 # ios_MapDiarySample
 
-* NaverCloudPlatForm의  지도API 사용 
+#### NaverCloudPlatForm의  지도API 사용 
     - 지도 불러오기: Mobile Dynamic Map (ios SDK)  2.x 버전
     - 장소 검색기능: Search Places API 
 
