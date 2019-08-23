@@ -5,9 +5,8 @@
     - 장소 검색기능: Search Places API 
 
 - 협업을 위한 xcode 버전 다운그레이드
-    - xcode 9.4.1로 변경
-    - 나중에 레포합치기
-    - 이전 단계:  네이버 MobileMap 불러오기 ( 현재위치 추가 ) + SearchPlaces API 호출
+    - xcode 9.4.1로 변경 / 나중에 NMapTest레포와 합치기
+    - 이전 단계: 네이버 MobileMap 불러오기 ( 현재위치 추가 ) + SearchPlaces API 호출
     
 - 8/23 금
     - 장소검색결과 newDiaryVC에 전달
