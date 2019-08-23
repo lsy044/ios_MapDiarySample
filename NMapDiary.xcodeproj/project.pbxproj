@@ -13,6 +13,8 @@
 		3C30C58A230DD22D00C1D487 /* NMapViewResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C589230DD22D00C1D487 /* NMapViewResources.swift */; };
 		3C30C58F230DD2BC00C1D487 /* NMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C58E230DD2BC00C1D487 /* NMapViewController.swift */; };
 		3C30C591230DD32A00C1D487 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C590230DD32A00C1D487 /* PlaceTableViewCell.swift */; };
+		3C67067D230FA57F00D2A291 /* NewDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C67067C230FA57F00D2A291 /* NewDiaryViewController.swift */; };
+		3C9930CC230FBA3B0028E7EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C9930CB230FBA3B0028E7EB /* GoogleService-Info.plist */; };
 		3CD6B788230DCBE0000D13F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6B787230DCBE0000D13F0 /* AppDelegate.swift */; };
 		3CD6B78A230DCBE0000D13F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6B789230DCBE0000D13F0 /* ViewController.swift */; };
 		3CD6B78D230DCBE0000D13F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD6B78B230DCBE0000D13F0 /* Main.storyboard */; };
@@ -68,6 +70,8 @@
 		3C30C58D230DD29000C1D487 /* Anam.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Anam.gpx; sourceTree = "<group>"; };
 		3C30C58E230DD2BC00C1D487 /* NMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapViewController.swift; sourceTree = "<group>"; };
 		3C30C590230DD32A00C1D487 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		3C67067C230FA57F00D2A291 /* NewDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiaryViewController.swift; sourceTree = "<group>"; };
+		3C9930CB230FBA3B0028E7EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3CD6B784230DCBE0000D13F0 /* NMapDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMapDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD6B787230DCBE0000D13F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CD6B789230DCBE0000D13F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,11 +155,13 @@
 				3CD6B787230DCBE0000D13F0 /* AppDelegate.swift */,
 				3CD6B789230DCBE0000D13F0 /* ViewController.swift */,
 				3C30C585230DD1D000C1D487 /* SearchPlaceViewController.swift */,
-				3C30C590230DD32A00C1D487 /* PlaceTableViewCell.swift */,
-				3C30C58D230DD29000C1D487 /* Anam.gpx */,
+				3C67067C230FA57F00D2A291 /* NewDiaryViewController.swift */,
 				3C30C58E230DD2BC00C1D487 /* NMapViewController.swift */,
-				3C30C587230DD20000C1D487 /* Place.swift */,
 				3C30C589230DD22D00C1D487 /* NMapViewResources.swift */,
+				3C30C590230DD32A00C1D487 /* PlaceTableViewCell.swift */,
+				3C30C587230DD20000C1D487 /* Place.swift */,
+				3C30C58D230DD29000C1D487 /* Anam.gpx */,
+				3C9930CB230FBA3B0028E7EB /* GoogleService-Info.plist */,
 				3CD6B78B230DCBE0000D13F0 /* Main.storyboard */,
 				3CD6B78E230DCBE3000D13F0 /* Assets.xcassets */,
 				3CD6B790230DCBE3000D13F0 /* LaunchScreen.storyboard */,
@@ -318,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CD6B792230DCBE3000D13F0 /* LaunchScreen.storyboard in Resources */,
+				3C9930CC230FBA3B0028E7EB /* GoogleService-Info.plist in Resources */,
 				3CD6B78F230DCBE3000D13F0 /* Assets.xcassets in Resources */,
 				3CD6B78D230DCBE0000D13F0 /* Main.storyboard in Resources */,
 			);
@@ -426,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CD6B78A230DCBE0000D13F0 /* ViewController.swift in Sources */,
+				3C67067D230FA57F00D2A291 /* NewDiaryViewController.swift in Sources */,
 				3CD6B788230DCBE0000D13F0 /* AppDelegate.swift in Sources */,
 				3C30C586230DD1D000C1D487 /* SearchPlaceViewController.swift in Sources */,
 				3C30C591230DD32A00C1D487 /* PlaceTableViewCell.swift in Sources */,

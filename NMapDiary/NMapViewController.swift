@@ -6,24 +6,49 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class NMapViewController: UIViewController, NMapViewDelegate, NMapPOIdataOverlayDelegate, NMapLocationManagerDelegate {
-    
+
     //Mobile Dynamic Map
     var mapView: NMapView?
     @IBOutlet weak var levelStepper: UIStepper!
     var changeStateButton: UIButton?
-    
     enum state {
         case disabled
         case tracking
         case trackingWithHeading
     }
-    
     var currentState: state = .disabled
+    
+    // 불러올 diary 데이터베이스 for Markers
+    var database: DatabaseReference!
+    var diaryRecords: [String: [String:Any]]! = [:]
+    var databaseHandler: DatabaseHandle!
+    let databaseName: String = "diaryRecords"
+    var places: [[String:String]]! = []
+    
+    // connect Database
+    func configureDatabase() {
+        database = Database.database().reference()
+        databaseHandler = database.child(databaseName)
+            .observe(.value, with: { (snapshot) -> Void in
+                guard let diaryRecords = snapshot.value as? [String: [String: Any]]
+                    else {
+                        return
+                }
+                self.diaryRecords = diaryRecords
+                let diaryArrays = Array(self.diaryRecords)
+                for diary in diaryArrays {
+                    self.places.append( diary.value["placeInfo"] as! [String : String] )
+                }
+            })
+        print("\(self.places.count)장소들")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureDatabase()
         
         mapView = NMapView(frame: self.view.frame)
         self.navigationController?.navigationBar.isTranslucent = false
@@ -37,6 +62,11 @@ class NMapViewController: UIViewController, NMapViewDelegate, NMapPOIdataOverlay
             mapView.setClientId("bbuvdesc40")
             mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             
+            // 레이어 커스텀...
+//            setLayerGroup(NMF_LAYER_GROUP_BUILDING,isEnabled: false)
+//            let NMF_LAYER_GROUP_BUILDING: String?
+//            mapView.setMapViewBuildingMode(false)
+//            mapView.setMapViewTrafficMode(false)
             view.addSubview(mapView)
         }
         
@@ -53,11 +83,12 @@ class NMapViewController: UIViewController, NMapViewDelegate, NMapPOIdataOverlay
         }
         view.bringSubview(toFront: levelStepper)
         //        mapView?.setBuiltInAppControl(true)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        configureDatabase()
         mapView?.viewWillAppear()
     }
     
@@ -83,6 +114,9 @@ class NMapViewController: UIViewController, NMapViewDelegate, NMapPOIdataOverlay
         super.viewDidAppear(animated)
         
         mapView?.viewDidAppear()
+        
+        showMarkers()
+        print("didappear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -296,14 +330,32 @@ class NMapViewController: UIViewController, NMapViewDelegate, NMapPOIdataOverlay
         mapView?.setZoomLevel(Int32(sender.value))
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    // MARK: - Marker 기능 - 옵셔널수정해야함
+    func showMarkers() {
+        if let mapOverlayManager = mapView?.mapOverlayManager {
+            // create POI data overlay
+            if let poiDataOverlay = mapOverlayManager.newPOIdataOverlay() {
+                poiDataOverlay.initPOIdata(Int32(self.places.count))
+                for place in places {
+                    poiDataOverlay.addPOIitem(atLocation: NGeoPoint(longitude: Double(place["x"]!)!, latitude: Double(place["y"]!)!), title: "마커", type: UserPOIflagTypeDefault, iconIndex: 0, with: nil)
+                }
+                poiDataOverlay.endPOIdata()
+                
+                // show all POI data
+                poiDataOverlay.showAllPOIdata()
+                poiDataOverlay.selectPOIitem(at: 2, moveToCenter: false, focusedBySelectItem: true)
+
+            }
+        }
+        print("\(places.count)만큼 표시함")
+    }
+
+    
+//    func clearOverlays() {
+//        if let mapOverlayManager = mapView?.mapOverlayManager {
+//            mapOverlayManager.clearOverlays()
+//        }
+//    }
+
     
 }

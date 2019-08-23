@@ -7,7 +7,9 @@ target 'NMapDiary' do
 
   # Pods for NMapDiary
   pod 'Alamofire', '~>4.6'
-  
+  pod 'Firebase','~>4.9'
+  pod 'Firebase/Database'
+
   target 'NMapDiaryTests' do
     inherit! :search_paths
     # Pods for testing

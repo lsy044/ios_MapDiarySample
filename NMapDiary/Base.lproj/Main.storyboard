@@ -37,6 +37,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="cell 클릭시 params넘겨서 기록하는창으로  (segue) -&gt; 기록완료(버튼누르면)되면 데이터베이스저장 + 그 주소받아서 다시 지도에 표시! (위도경도-&gt;마커 )" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EHc-kg-a67">
+                                <rect key="frame" x="67" y="289" width="240" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -128,11 +135,94 @@
                     <connections>
                         <outlet property="queryField" destination="e9r-S5-eaK" id="1RD-Vw-ttP"/>
                         <outlet property="responseView" destination="w2W-lm-6bP" id="iiE-eL-AbS"/>
+                        <segue destination="9f0-Wz-7QL" kind="presentation" identifier="NewDiary" id="gLG-rD-MAU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rD1-EY-xVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="165.59999999999999" y="868.51574212893559"/>
+        </scene>
+        <!--New Diary View Controller-->
+        <scene sceneID="mf9-xd-jWx">
+            <objects>
+                <viewController id="9f0-Wz-7QL" customClass="NewDiaryViewController" customModule="NMapDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1th-5w-6G6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lli-wu-I57">
+                                <rect key="frame" x="0.0" y="94" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ovq-Dz-Aon">
+                                <rect key="frame" x="67" y="344" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2uf-cS-KKf">
+                                <rect key="frame" x="0.0" y="196" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="588237246.78187799">
+                                    <!--2019-08-23 07:14:06 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="didDatePickerValueChanged:" destination="9f0-Wz-7QL" eventType="touchUpInside" id="d53-yb-XIn"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3J-EN-X0p">
+                                <rect key="frame" x="166" y="167" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lks-Tf-lAf">
+                                <rect key="frame" x="329" y="74" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchUpSaveButtonWith_sender:" destination="9f0-Wz-7QL" eventType="touchUpInside" id="Cnt-JK-Kl6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vIl-1D-9i5">
+                                <rect key="frame" x="67" y="480" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.78163947290000002" blue="0.84850658560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mQc-e5-gxY" appends="YES" id="wtY-dY-zCC"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lli-wu-I57" firstAttribute="leading" secondItem="Nbq-Ib-o2P" secondAttribute="leading" id="W8s-Iq-51E"/>
+                            <constraint firstItem="Lli-wu-I57" firstAttribute="top" secondItem="Nbq-Ib-o2P" secondAttribute="top" constant="74" id="cA2-SB-6s9"/>
+                            <constraint firstItem="Nbq-Ib-o2P" firstAttribute="trailing" secondItem="Lli-wu-I57" secondAttribute="trailing" id="nMP-my-4if"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nbq-Ib-o2P"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="2uf-cS-KKf" id="Zkq-L8-M8Q"/>
+                        <outlet property="diaryContentsField" destination="Ovq-Dz-Aon" id="Ora-zM-3z7"/>
+                        <outlet property="diaryDateLabel" destination="R3J-EN-X0p" id="uP1-2Z-I8A"/>
+                        <outlet property="diaryImageField" destination="vIl-1D-9i5" id="vjS-Uc-lET"/>
+                        <outlet property="placeNameLabel" destination="Lli-wu-I57" id="xjX-fQ-eC8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCw-Tp-wie" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mQc-e5-gxY">
+                    <connections>
+                        <action selector="tapImageView:" destination="9f0-Wz-7QL" id="UeH-mt-dzT"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="944.79999999999995" y="868.51574212893559"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="i7Y-XC-KB7">
@@ -160,6 +250,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMm-XM-8q8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1736.8" y="127.28635682158921"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oyb-Bh-Pgq">
+            <objects>
+                <viewController id="6it-Js-pyN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oys-b5-ko3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="i0m-6B-F6A"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z18-Cf-rQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1663" y="869"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zW7-32-Cy6">

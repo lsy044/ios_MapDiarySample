@@ -4,6 +4,7 @@
 //  Created by JIN on 20/08/2019.
 //  Copyright © 2019 sy. All rights reserved.
 //
+
 /////// clientID랑 시크릿 git ignore ////////////
 import UIKit
 import Alamofire
@@ -16,6 +17,7 @@ class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITabl
     
     let cellIdentifier: String = "cell"
     var placeArrays: [Place] = []
+    var dataToSend: Place? = nil
     
     // TableViewDataSource - required
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,7 +57,7 @@ class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITabl
         /* coordinate 나중에 CoreLocation으로 현재위치받아오기해보기 */
         
         //get response
-        let request = Alamofire.request(url!, method: .get, parameters: param, encoding: URLEncoding.default, headers: ["X-NCP-APIGW-API-KEY-ID":"bbuvdesc40","X-NCP-APIGW-API-KEY":"5B80Wn97TsT6ulaRqEQmOikDVQRokoncVo88f6lr"])
+        let request = Alamofire.request(url!, method: .get, parameters: param, encoding: URLEncoding.default, headers: ["X-NCP-APIGW-API-KEY-ID":"","X-NCP-APIGW-API-KEY":""])
         request.response{(dataResponse) in
             // get data - decode
             guard let data: Data = dataResponse.data else {
@@ -80,6 +82,25 @@ class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITabl
         request.responseJSON() {(response) in
             print(response.result.value ?? "")
         }
+    }
+    
+    // segue Data 전달 -> NewDiaryView 기록창
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "NewDiary", let destination = segue.destination as? NewDiaryViewController {
+            destination.data = self.dataToSend
+        }
+    }
+    
+    // row 선택시 반응 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        print("\(indexPath.section)section의 \(indexPath.row)row를 선택함")
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        let cell = tableView.cellForRow(at: indexPath)
+        let place: Place = placeArrays[indexPath.row]
+        
+        self.dataToSend = place
+        self.performSegue(withIdentifier: "NewDiary", sender: cell)
     }
     
     
