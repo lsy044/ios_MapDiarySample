@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		261126A4B43A3ABC18BB7334 /* Pods_NMapDiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7DB1C5E6B7034ADC46C52 /* Pods_NMapDiaryTests.framework */; };
-		3C30C586230DD1D000C1D487 /* SearchPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C585230DD1D000C1D487 /* SearchPlaceViewController.swift */; };
+		3C26CBC623120308006F154C /* SearchPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C26CBC523120308006F154C /* SearchPlaceViewController.swift */; };
 		3C30C588230DD20000C1D487 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C587230DD20000C1D487 /* Place.swift */; };
 		3C30C58F230DD2BC00C1D487 /* NMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C58E230DD2BC00C1D487 /* NMapViewController.swift */; };
 		3C30C591230DD32A00C1D487 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C590230DD32A00C1D487 /* PlaceTableViewCell.swift */; };
@@ -45,7 +45,7 @@
 /* Begin PBXFileReference section */
 		0B4DE6A7A55C0572880035FB /* Pods-NMapDiaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapDiaryUITests.release.xcconfig"; path = "Target Support Files/Pods-NMapDiaryUITests/Pods-NMapDiaryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2D9C41AC5AB7B7C4EBE2DB08 /* Pods-NMapDiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapDiaryTests.release.xcconfig"; path = "Target Support Files/Pods-NMapDiaryTests/Pods-NMapDiaryTests.release.xcconfig"; sourceTree = "<group>"; };
-		3C30C585230DD1D000C1D487 /* SearchPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewController.swift; sourceTree = "<group>"; };
+		3C26CBC523120308006F154C /* SearchPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewController.swift; sourceTree = "<group>"; };
 		3C30C587230DD20000C1D487 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		3C30C58D230DD29000C1D487 /* Anam.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Anam.gpx; sourceTree = "<group>"; };
 		3C30C58E230DD2BC00C1D487 /* NMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapViewController.swift; sourceTree = "<group>"; };
@@ -128,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				3CD6B787230DCBE0000D13F0 /* AppDelegate.swift */,
+				3C26CBC523120308006F154C /* SearchPlaceViewController.swift */,
 				3CD6B789230DCBE0000D13F0 /* ViewController.swift */,
-				3C30C585230DD1D000C1D487 /* SearchPlaceViewController.swift */,
 				3C67067C230FA57F00D2A291 /* NewDiaryViewController.swift */,
 				3C30C58E230DD2BC00C1D487 /* NMapViewController.swift */,
 				3C30C590230DD32A00C1D487 /* PlaceTableViewCell.swift */,
@@ -406,9 +406,9 @@
 				3CD6B78A230DCBE0000D13F0 /* ViewController.swift in Sources */,
 				3C67067D230FA57F00D2A291 /* NewDiaryViewController.swift in Sources */,
 				3CD6B788230DCBE0000D13F0 /* AppDelegate.swift in Sources */,
-				3C30C586230DD1D000C1D487 /* SearchPlaceViewController.swift in Sources */,
 				3C30C591230DD32A00C1D487 /* PlaceTableViewCell.swift in Sources */,
 				3C30C588230DD20000C1D487 /* Place.swift in Sources */,
+				3C26CBC623120308006F154C /* SearchPlaceViewController.swift in Sources */,
 				3C30C58F230DD2BC00C1D487 /* NMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
