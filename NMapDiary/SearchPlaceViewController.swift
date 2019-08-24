@@ -7,6 +7,7 @@
 
 /////// clientID랑 시크릿 git ignore ////////////
 import UIKit
+import NMapsMap
 import Alamofire
 
 class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -57,7 +58,7 @@ class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITabl
         /* coordinate 나중에 CoreLocation으로 현재위치받아오기해보기 */
         
         //get response
-        let request = Alamofire.request(url!, method: .get, parameters: param, encoding: URLEncoding.default, headers: ["X-NCP-APIGW-API-KEY-ID":"","X-NCP-APIGW-API-KEY":""])
+        let request = Alamofire.request(url!, method: .get, parameters: param, encoding: URLEncoding.default, headers: ["X-NCP-APIGW-API-KEY-ID":"bbuvdesc40","X-NCP-APIGW-API-KEY":"5B80Wn97TsT6ulaRqEQmOikDVQRokoncVo88f6lr"])
         request.response{(dataResponse) in
             // get data - decode
             guard let data: Data = dataResponse.data else {

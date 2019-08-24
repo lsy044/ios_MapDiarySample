@@ -232,19 +232,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="VEy-iM-7Kw">
-                                <rect key="frame" x="249" y="569" width="94" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="levelStepperValueChanged:" destination="3sD-ER-xit" eventType="touchUpInside" id="llN-R1-sMS"/>
-                                </connections>
-                            </stepper>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxn-BD-i84" customClass="NMFNaverMapView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="4Ny-es-Yh0">
+                                        <rect key="frame" x="258" y="522" width="94" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </stepper>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uxn-BD-i84" firstAttribute="leading" secondItem="g6C-l6-95y" secondAttribute="leading" id="LpK-Md-7Fv"/>
+                            <constraint firstItem="g6C-l6-95y" firstAttribute="trailing" secondItem="uxn-BD-i84" secondAttribute="trailing" id="Xrk-AQ-O8B"/>
+                            <constraint firstItem="uxn-BD-i84" firstAttribute="top" secondItem="g6C-l6-95y" secondAttribute="top" id="gqs-Eg-UaY"/>
+                            <constraint firstItem="g6C-l6-95y" firstAttribute="bottom" secondItem="uxn-BD-i84" secondAttribute="bottom" id="xDL-CL-VHs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="g6C-l6-95y"/>
                     </view>
                     <connections>
-                        <outlet property="levelStepper" destination="VEy-iM-7Kw" id="h40-es-7CT"/>
+                        <outlet property="levelStepper" destination="4Ny-es-Yh0" id="kLQ-gM-ya8"/>
+                        <outlet property="naverMapView" destination="uxn-BD-i84" id="QIT-dZ-le8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMm-XM-8q8" userLabel="First Responder" sceneMemberID="firstResponder"/>

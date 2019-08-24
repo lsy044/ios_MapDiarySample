@@ -7,15 +7,15 @@
 //
 
 import UIKit
+import NMapsMap
 import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        NMFAuthManager.shared().clientId = "bbuvdesc40"
         FirebaseApp.configure()
         return true
     }

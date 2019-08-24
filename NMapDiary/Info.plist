@@ -49,6 +49,9 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
     
+    <key>NMFClientId</key>
+    <string>bbuvdesc40</string>
+    
     <key>NSAppTransportSecurity</key>
     <dict>
         <key>NSAllowsArbitraryLoads</key>
