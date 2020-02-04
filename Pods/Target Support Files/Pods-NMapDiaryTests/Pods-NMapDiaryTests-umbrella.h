@@ -1,16 +1,3 @@
-#ifdef __OBJC__
-#import <UIKit/UIKit.h>
-#else
-#ifndef FOUNDATION_EXPORT
-#if defined(__cplusplus)
-#define FOUNDATION_EXPORT extern "C"
-#else
-#define FOUNDATION_EXPORT extern
-#endif
-#endif
-#endif
-
-
-FOUNDATION_EXPORT double Pods_NMapDiaryTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_NMapDiaryTestsVersionString[];
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:9289143dfc02297f7ef54bbd833b66f48de45e221945b0dc3950ebee7c149097
+size 330

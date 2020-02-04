@@ -10,21 +10,24 @@
 		261126A4B43A3ABC18BB7334 /* Pods_NMapDiaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90C7DB1C5E6B7034ADC46C52 /* Pods_NMapDiaryTests.framework */; };
 		3C30C586230DD1D000C1D487 /* SearchPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C585230DD1D000C1D487 /* SearchPlaceViewController.swift */; };
 		3C30C588230DD20000C1D487 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C587230DD20000C1D487 /* Place.swift */; };
-		3C30C58A230DD22D00C1D487 /* NMapViewResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C589230DD22D00C1D487 /* NMapViewResources.swift */; };
 		3C30C58F230DD2BC00C1D487 /* NMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C58E230DD2BC00C1D487 /* NMapViewController.swift */; };
-		3C30C591230DD32A00C1D487 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C590230DD32A00C1D487 /* PlaceTableViewCell.swift */; };
 		3CD6B788230DCBE0000D13F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6B787230DCBE0000D13F0 /* AppDelegate.swift */; };
 		3CD6B78A230DCBE0000D13F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6B789230DCBE0000D13F0 /* ViewController.swift */; };
 		3CD6B78D230DCBE0000D13F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD6B78B230DCBE0000D13F0 /* Main.storyboard */; };
-		3CD6B78F230DCBE3000D13F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD6B78E230DCBE3000D13F0 /* Assets.xcassets */; };
-		3CD6B792230DCBE3000D13F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD6B790230DCBE3000D13F0 /* LaunchScreen.storyboard */; };
 		3CD6B79D230DCBE3000D13F0 /* NMapDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6B79C230DCBE3000D13F0 /* NMapDiaryTests.swift */; };
 		3CD6B7A8230DCBE3000D13F0 /* NMapDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6B7A7230DCBE3000D13F0 /* NMapDiaryUITests.swift */; };
-		3CD6B7B6230DCD27000D13F0 /* ApiGatewayMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD6B7B5230DCD27000D13F0 /* ApiGatewayMac.framework */; };
-		3CD6B7B7230DCD27000D13F0 /* ApiGatewayMac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD6B7B5230DCD27000D13F0 /* ApiGatewayMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3CD6B7BB230DCD33000D13F0 /* NMapViewerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD6B7BA230DCD33000D13F0 /* NMapViewerSDK.framework */; };
 		5ADEF0DEA6BBEB5E08AD7BA8 /* Pods_NMapDiaryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3741B583732D5FB2F40E291 /* Pods_NMapDiaryUITests.framework */; };
-		C769EAF56FB29AE5DD3362F1 /* Pods_NMapDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D000B959A6B6B791E9156B4 /* Pods_NMapDiary.framework */; };
+		770A16CC177794D599B33EA5 /* Pods_NMapDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D000B959A6B6B791E9156B4 /* Pods_NMapDiary.framework */; };
+		E52A0CE6230FADAE00B59FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52A0CE5230FADAD00B59FD0 /* Assets.xcassets */; };
+		E587C9E02313A9E300321645 /* SearchDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E587C9DF2313A9E300321645 /* SearchDateViewController.swift */; };
+		E587C9E22313E32C00321645 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E587C9E12313E32C00321645 /* GoogleService-Info.plist */; };
+		E587C9E42313EF0200321645 /* ShowDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E587C9E32313EF0200321645 /* ShowDiaryViewController.swift */; };
+		E58897C52313F570009B90D5 /* LogDiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58897C42313F570009B90D5 /* LogDiaryTableViewCell.swift */; };
+		E58897C72313F5CD009B90D5 /* LogDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58897C62313F5CD009B90D5 /* LogDiaryViewController.swift */; };
+		E58897C92313F5EB009B90D5 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58897C82313F5EB009B90D5 /* PlaceTableViewCell.swift */; };
+		E588CBE0230E724000995665 /* NanumBarunpenRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E588CBDE230E723F00995665 /* NanumBarunpenRegular.ttf */; };
+		E588CBE1230E724000995665 /* NanumBarunpenBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E588CBDF230E724000995665 /* NanumBarunpenBold.ttf */; };
+		E588CBE5230E8A4000995665 /* NewDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E588CBE4230E8A4000995665 /* NewDiaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +54,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3CD6B7B7230DCD27000D13F0 /* ApiGatewayMac.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,19 +63,14 @@
 /* Begin PBXFileReference section */
 		0B4DE6A7A55C0572880035FB /* Pods-NMapDiaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapDiaryUITests.release.xcconfig"; path = "Target Support Files/Pods-NMapDiaryUITests/Pods-NMapDiaryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2D9C41AC5AB7B7C4EBE2DB08 /* Pods-NMapDiaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapDiaryTests.release.xcconfig"; path = "Target Support Files/Pods-NMapDiaryTests/Pods-NMapDiaryTests.release.xcconfig"; sourceTree = "<group>"; };
-		3C30C584230DCF7B00C1D487 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		3C30C585230DD1D000C1D487 /* SearchPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewController.swift; sourceTree = "<group>"; };
 		3C30C587230DD20000C1D487 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
-		3C30C589230DD22D00C1D487 /* NMapViewResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapViewResources.swift; sourceTree = "<group>"; };
 		3C30C58D230DD29000C1D487 /* Anam.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Anam.gpx; sourceTree = "<group>"; };
 		3C30C58E230DD2BC00C1D487 /* NMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapViewController.swift; sourceTree = "<group>"; };
-		3C30C590230DD32A00C1D487 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		3CD6B784230DCBE0000D13F0 /* NMapDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMapDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD6B787230DCBE0000D13F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CD6B789230DCBE0000D13F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3CD6B78C230DCBE0000D13F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3CD6B78E230DCBE3000D13F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3CD6B791230DCBE3000D13F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CD6B793230DCBE3000D13F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CD6B798230DCBE3000D13F0 /* NMapDiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NMapDiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD6B79C230DCBE3000D13F0 /* NMapDiaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapDiaryTests.swift; sourceTree = "<group>"; };
@@ -81,8 +78,6 @@
 		3CD6B7A3230DCBE3000D13F0 /* NMapDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NMapDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD6B7A7230DCBE3000D13F0 /* NMapDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMapDiaryUITests.swift; sourceTree = "<group>"; };
 		3CD6B7A9230DCBE3000D13F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CD6B7B5230DCD27000D13F0 /* ApiGatewayMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApiGatewayMac.framework; path = "../maps-2.ios-ncp/Frameworks/ApiGatewayMac.framework"; sourceTree = "<group>"; };
-		3CD6B7BA230DCD33000D13F0 /* NMapViewerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMapViewerSDK.framework; path = "../maps-2.ios-ncp/Frameworks/NMapViewerSDK.framework"; sourceTree = "<group>"; };
 		4D000B959A6B6B791E9156B4 /* Pods_NMapDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMapDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A680DE9C9D4B2767BAC5D3 /* Pods-NMapDiaryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapDiaryUITests.debug.xcconfig"; path = "Target Support Files/Pods-NMapDiaryUITests/Pods-NMapDiaryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		90C7DB1C5E6B7034ADC46C52 /* Pods_NMapDiaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMapDiaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +85,16 @@
 		B8FB0AB6ADEBB64ACFFE6A77 /* Pods-NMapDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapDiary.release.xcconfig"; path = "Target Support Files/Pods-NMapDiary/Pods-NMapDiary.release.xcconfig"; sourceTree = "<group>"; };
 		BA2913F6EAD1700FC9FB3C18 /* Pods-NMapDiaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMapDiaryTests.debug.xcconfig"; path = "Target Support Files/Pods-NMapDiaryTests/Pods-NMapDiaryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3741B583732D5FB2F40E291 /* Pods_NMapDiaryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMapDiaryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52A0CE5230FADAD00B59FD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E587C9DF2313A9E300321645 /* SearchDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDateViewController.swift; sourceTree = "<group>"; };
+		E587C9E12313E32C00321645 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E587C9E32313EF0200321645 /* ShowDiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDiaryViewController.swift; sourceTree = "<group>"; };
+		E58897C42313F570009B90D5 /* LogDiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDiaryTableViewCell.swift; sourceTree = "<group>"; };
+		E58897C62313F5CD009B90D5 /* LogDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDiaryViewController.swift; sourceTree = "<group>"; };
+		E58897C82313F5EB009B90D5 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		E588CBDE230E723F00995665 /* NanumBarunpenRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenRegular.ttf; sourceTree = "<group>"; };
+		E588CBDF230E724000995665 /* NanumBarunpenBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunpenBold.ttf; sourceTree = "<group>"; };
+		E588CBE4230E8A4000995665 /* NewDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDiaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD6B7BB230DCD33000D13F0 /* NMapViewerSDK.framework in Frameworks */,
-				3CD6B7B6230DCD27000D13F0 /* ApiGatewayMac.framework in Frameworks */,
-				C769EAF56FB29AE5DD3362F1 /* Pods_NMapDiary.framework in Frameworks */,
+				770A16CC177794D599B33EA5 /* Pods_NMapDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +128,6 @@
 		3CD6B77B230DCBE0000D13F0 = {
 			isa = PBXGroup;
 			children = (
-				3CD6B7B5230DCD27000D13F0 /* ApiGatewayMac.framework */,
 				3CD6B786230DCBE0000D13F0 /* NMapDiary */,
 				3CD6B79B230DCBE3000D13F0 /* NMapDiaryTests */,
 				3CD6B7A6230DCBE3000D13F0 /* NMapDiaryUITests */,
@@ -151,16 +153,21 @@
 				3CD6B787230DCBE0000D13F0 /* AppDelegate.swift */,
 				3CD6B789230DCBE0000D13F0 /* ViewController.swift */,
 				3C30C585230DD1D000C1D487 /* SearchPlaceViewController.swift */,
-				3C30C590230DD32A00C1D487 /* PlaceTableViewCell.swift */,
+				E587C9E12313E32C00321645 /* GoogleService-Info.plist */,
 				3C30C58D230DD29000C1D487 /* Anam.gpx */,
 				3C30C58E230DD2BC00C1D487 /* NMapViewController.swift */,
+				E58897C62313F5CD009B90D5 /* LogDiaryViewController.swift */,
 				3C30C587230DD20000C1D487 /* Place.swift */,
-				3C30C589230DD22D00C1D487 /* NMapViewResources.swift */,
+				E58897C82313F5EB009B90D5 /* PlaceTableViewCell.swift */,
+				E587C9E32313EF0200321645 /* ShowDiaryViewController.swift */,
+				E58897C42313F570009B90D5 /* LogDiaryTableViewCell.swift */,
 				3CD6B78B230DCBE0000D13F0 /* Main.storyboard */,
-				3CD6B78E230DCBE3000D13F0 /* Assets.xcassets */,
-				3CD6B790230DCBE3000D13F0 /* LaunchScreen.storyboard */,
+				E587C9DF2313A9E300321645 /* SearchDateViewController.swift */,
+				E588CBE4230E8A4000995665 /* NewDiaryViewController.swift */,
 				3CD6B793230DCBE3000D13F0 /* Info.plist */,
-				3C30C584230DCF7B00C1D487 /* Header.h */,
+				E588CBDF230E724000995665 /* NanumBarunpenBold.ttf */,
+				E588CBDE230E723F00995665 /* NanumBarunpenRegular.ttf */,
+				E52A0CE5230FADAD00B59FD0 /* Assets.xcassets */,
 			);
 			path = NMapDiary;
 			sourceTree = "<group>";
@@ -186,7 +193,6 @@
 		3CD6B7B9230DCD32000D13F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3CD6B7BA230DCD33000D13F0 /* NMapViewerSDK.framework */,
 				4D000B959A6B6B791E9156B4 /* Pods_NMapDiary.framework */,
 				90C7DB1C5E6B7034ADC46C52 /* Pods_NMapDiaryTests.framework */,
 				D3741B583732D5FB2F40E291 /* Pods_NMapDiaryUITests.framework */,
@@ -317,9 +323,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD6B792230DCBE3000D13F0 /* LaunchScreen.storyboard in Resources */,
-				3CD6B78F230DCBE3000D13F0 /* Assets.xcassets in Resources */,
+				E588CBE0230E724000995665 /* NanumBarunpenRegular.ttf in Resources */,
+				E588CBE1230E724000995665 /* NanumBarunpenBold.ttf in Resources */,
+				E587C9E22313E32C00321645 /* GoogleService-Info.plist in Resources */,
 				3CD6B78D230DCBE0000D13F0 /* Main.storyboard in Resources */,
+				E52A0CE6230FADAE00B59FD0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +359,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/Users/jin/Desktop/ios/maps-2.ios-ncp/Scripts/strip-frameworks.sh";
+			shellScript = "";
 		};
 		6A479E9C38B11222484FC06E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -376,7 +384,13 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NMapDiary/Pods-NMapDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NMapDiary/Pods-NMapDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NMapDiary/Pods-NMapDiary-frameworks.sh\"\n";
@@ -426,11 +440,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CD6B78A230DCBE0000D13F0 /* ViewController.swift in Sources */,
+				E58897C72313F5CD009B90D5 /* LogDiaryViewController.swift in Sources */,
+				E58897C52313F570009B90D5 /* LogDiaryTableViewCell.swift in Sources */,
+				E588CBE5230E8A4000995665 /* NewDiaryViewController.swift in Sources */,
 				3CD6B788230DCBE0000D13F0 /* AppDelegate.swift in Sources */,
+				E58897C92313F5EB009B90D5 /* PlaceTableViewCell.swift in Sources */,
 				3C30C586230DD1D000C1D487 /* SearchPlaceViewController.swift in Sources */,
-				3C30C591230DD32A00C1D487 /* PlaceTableViewCell.swift in Sources */,
+				E587C9E02313A9E300321645 /* SearchDateViewController.swift in Sources */,
+				E587C9E42313EF0200321645 /* ShowDiaryViewController.swift in Sources */,
 				3C30C588230DD20000C1D487 /* Place.swift in Sources */,
-				3C30C58A230DD22D00C1D487 /* NMapViewResources.swift in Sources */,
 				3C30C58F230DD2BC00C1D487 /* NMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,14 +491,6 @@
 				3CD6B78C230DCBE0000D13F0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3CD6B790230DCBE3000D13F0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3CD6B791230DCBE3000D13F0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -607,10 +617,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z7ZR296ZWX;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../maps-2.ios-ncp/Frameworks\"",
-					"$(inherited)",
-				);
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				IBSC_COMPILER_AUTO_ACTIVATE_CUSTOM_FONTS = YES;
 				INFOPLIST_FILE = NMapDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -623,7 +632,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sy.NMapTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/jin/Desktop/ios/NMapDiary/NMapDiary/Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -636,10 +645,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z7ZR296ZWX;
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../maps-2.ios-ncp/Frameworks\"",
-					"$(inherited)",
-				);
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				IBSC_COMPILER_AUTO_ACTIVATE_CUSTOM_FONTS = YES;
 				INFOPLIST_FILE = NMapDiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -652,7 +660,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sy.NMapTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/jin/Desktop/ios/NMapDiary/NMapDiary/Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

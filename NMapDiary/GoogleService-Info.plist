@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>262653245173-lput0euc6pvomfvnbc47dgugekordtdu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.262653245173-lput0euc6pvomfvnbc47dgugekordtdu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCuA9MTL2hYh876ovBX641Ux0ZIcuQ06kg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>262653245173</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>sy.NMapTest</string>
+	<key>PROJECT_ID</key>
+	<string>nmapdiary</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nmapdiary.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:262653245173:ios:263441da2d65c9de</string>
+	<key>DATABASE_URL</key>
+	<string>https://nmapdiary.firebaseio.com</string>
+</dict>
+</plist>

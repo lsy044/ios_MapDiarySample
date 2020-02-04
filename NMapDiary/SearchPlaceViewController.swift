@@ -4,9 +4,12 @@
 //  Created by JIN on 20/08/2019.
 //  Copyright © 2019 sy. All rights reserved.
 //
+
 /////// clientID랑 시크릿 git ignore ////////////
 import UIKit
+import NMapsMap
 import Alamofire
+import Firebase
 
 class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -15,7 +18,20 @@ class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITabl
     @IBOutlet weak var responseView: UITableView!
     
     let cellIdentifier: String = "cell"
+    
     var placeArrays: [Place] = []
+    var dataToSend: Place? = nil
+    
+    // for Search?
+    var place : Place?
+    var placeName: String?
+    
+    // MARK: Database Properties
+    var database: DatabaseReference!
+    var diaryRecords: [String: [String:Any]]! = [:]
+    var databaseHandler: DatabaseHandle!
+    let databaseName: String = "diaryRecords"
+    var placeInfo: [String:String] = ["x":"", "y":""]
     
     // TableViewDataSource - required
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -24,9 +40,10 @@ class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITabl
         let place: Place = placeArrays[indexPath.row]
         cell.nameLabel.text = place.name
         cell.addressLabel.text = place.jibunAddress
+        cell.tag = indexPath.row
         return cell
     }
-    
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return placeArrays.count
     }
@@ -38,7 +55,7 @@ class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     // Search Button
-    @IBAction func callSearchPlace(_sender: UIButton) {
+    @IBAction func callSearchPlace (_sender: UIButton) {
         guard let query: String = queryField.text, query.isEmpty == false else{
             print("검색어입력해주세요")
             return
@@ -55,7 +72,7 @@ class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITabl
         /* coordinate 나중에 CoreLocation으로 현재위치받아오기해보기 */
         
         //get response
-        let request = Alamofire.request(url!, method: .get, parameters: param, encoding: URLEncoding.default, headers: ["X-NCP-APIGW-API-KEY-ID":"bbuvdesc40","X-NCP-APIGW-API-KEY":"5B80Wn97TsT6ulaRqEQmOikDVQRokoncVo88f6lr"])
+        let request = Alamofire.request(url!, method: .get, parameters: param, encoding: URLEncoding.default, headers: ["X-NCP-APIGW-API-KEY-ID":"bbuvdesc40","X-NCP-APIGW-API-KEY":"edSqcVi8s5Qv5meC08kjEoMOVtgD3QbjwhOuTsFK"])
         request.response{(dataResponse) in
             // get data - decode
             guard let data: Data = dataResponse.data else {
@@ -82,10 +99,30 @@ class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITabl
         }
     }
     
+    // row 선택시 반응
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        print("\(indexPath.section)section의 \(indexPath.row)row를 선택함")
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+//        let cell = tableView.cellForRow(at: indexPath)
+//        let place: Place = placeArrays[indexPath.row]
+//
+
+ 
+    }
     
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        place = placeArrays[indexPath.row]
+        placeName = place?.name
+        if let placeX = place?.x , let placeY = place?.y {
+            placeInfo = ["x": placeX, "y":placeY]
+        }
+        return indexPath
+    }
+    
+    // dismiss
+    @IBAction func cancel(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
-/*
- cell 누르면 지도에 표시... 찾던 곳이 맞으면 마커누르면 기록하는 창. 아니면 그냥 뒤로가기..
- + 지도위에서 검색하면 좋을텐뎅(나중에)
- */

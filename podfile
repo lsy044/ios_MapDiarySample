@@ -6,8 +6,13 @@ target 'NMapDiary' do
   use_frameworks!
 
   # Pods for NMapDiary
+  pod 'NMapsMap'
   pod 'Alamofire', '~>4.6'
-  
+  pod 'Firebase','~>4.9'
+  pod 'Firebase/Database'
+  pod 'FSCalendar'
+  pod 'Firebase/Storage'
+
   target 'NMapDiaryTests' do
     inherit! :search_paths
     # Pods for testing

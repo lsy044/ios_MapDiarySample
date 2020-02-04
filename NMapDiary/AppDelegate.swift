@@ -1,3 +1,4 @@
+
 //
 //  AppDelegate.swift
 //  NMapDiary
@@ -7,15 +8,21 @@
 //
 
 import UIKit
+import NMapsMap
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    var database: DatabaseReference!
+    var databaseHandler: DatabaseHandle!
+    let databaseName: String = "diaryRecords"
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        NMFAuthManager.shared().clientId = "bbuvdesc40"
+        FirebaseApp.configure()
         return true
     }
 
@@ -31,10 +38,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        database = Database.database().reference()
+        databaseHandler = database.child(databaseName)
+            .observe(.value, with: { (snapshot) -> Void in
+                guard let diaryRecords = snapshot.value as? [String: [String: Any]]
+                    else {
+                        return
+                }
+            })
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
