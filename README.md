@@ -1,4 +1,4 @@
-# ios_MapDiarySample
+# ios-map-diary
 
 #### NaverCloudPlatForm의  지도API 사용 
     - 지도 불러오기: Mobile Dynamic Map (ios SDK)  3.x 버전 (git-lfs)
