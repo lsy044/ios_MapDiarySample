@@ -2,7 +2,7 @@
 
 #### NaverCloudPlatForm의  지도API 사용 
     - 지도 불러오기: Mobile Dynamic Map (ios SDK)  3.x 버전 (git-lfs)
-    - 장소 검색기능: Search Places API 
+    - 장소 검색기능: Search Places API  -> 2020.06 서비스 종료됨
 
 - initial: 
   - 네이버 MobileMap 불러오기 ( 현재위치 추가 ) + SearchPlaces API 호출
@@ -30,7 +30,7 @@
    - Alamofire 이용하여 장소 검색 api와 글쓰기기능 사이 정보전달 연동 
    - UI/UX 연결
  
- - 고려대학교 ios특강 해커톤 우수상 수상
+ 
 
     
 

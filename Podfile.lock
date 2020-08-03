@@ -50,7 +50,7 @@ DEPENDENCIES:
   - NMapsMap
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
     - Firebase
     - FirebaseAnalytics
@@ -82,4 +82,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 5a1f2a0b5ac16df1160142264f2cb0dc4b91ce75
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
